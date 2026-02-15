@@ -1,190 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>restaurant web</title>
+    <title>Food In - Premium Fast Food Restaurant</title>
+    <meta name="description"
+        content="Food In offers delicious fast food with quick delivery. Enjoy our signature burgers, pizzas, and meals made with fresh ingredients.">
     <link rel="stylesheet" href="style.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
     <header id="home">
         <nav class="navbar">
             <div class="logo">
-                <img src="img/log.png" alt="">
+                <img src="img/log.png" alt="Food In Logo">
                 <span>food in</span>
             </div>
 
             <ul class="nav_items" id="nav_links">
                 <div class="item">
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </div>
-                
+
                 <div>
-                    <button class="btn">explore</button>
+                    <a href="menu.html" class="btn">Explore Menu</a>
                 </div>
             </ul>
 
-            <div class="nav_menu" id="menu_btn">
+            <div class="nav_menu" id="menu_btn" aria-label="Toggle menu">
                 <i class="ri-menu-line"></i>
             </div>
         </nav>
-        <section class="main">
 
-            <h2 class="heading_1">welcome to fast food restaurant</h2>
-            <h1 class="heading">enjoy our <br>delicious meal</h1>
+        <section class="main">
+            <h2 class="heading_1">Welcome to Food In Restaurant</h2>
+            <h1 class="heading">Savor Our <br>Delicious Creations</h1>
             <div class="main_btn">
-                <button class="btn btn1">explore more</button>
-                <button class="btn btn2"><i class="ri-play-circle-line"></i>watch video</button>
+                <a href="menu.html" class="btn btn1">Order Now</a>
+                <a href="index.html#about" class="btn btn2"><i class="ri-play-circle-line"></i>Our Story</a>
             </div>
         </section>
-
     </header>
-    <!-- ___________services -->
-     <section class="sec services" id="services">
 
+    <section class="sec services" id="services">
         <div class="head">
-            <h3 class="heading_1">our services</h3>
-            <h1 class="heading">best <span>quality food</span> <br>order now</h1>
+            <h3 class="heading_1">Our Premium Services</h3>
+            <h1 class="heading">Experience <span>Exceptional Quality</span> <br>Delivered Fast</h1>
         </div>
 
         <div class="boxes">
-
             <div class="box">
-                <img src="img/pic1.png" alt="">
-                <h4>easy to order</h4>
-                <p>you only need a few steps in ordering food</p>
+                <img src="img/pic1.png" alt="Easy ordering icon" loading="lazy">
+                <h4>Simple Ordering</h4>
+                <p>Order your favorite meals in just three clicks with our user-friendly app</p>
+                <a href="menu.html" class="btn btn1" style="margin-top: 20px;">Start Ordering</a>
             </div>
             <div class="box">
-                <img src="img/pic2.png" alt="">
-                <h4>fastest delivery</h4>
-                <p>delivery that is always ontime even faster</p>
+                <img src="img/pic2.png" alt="Fast delivery icon" loading="lazy">
+                <h4>Lightning Delivery</h4>
+                <p>Average delivery time of 25 minutes guaranteed to keep your food hot</p>
+                <a href="#contact" class="btn btn1" style="margin-top: 20px;">Track Order</a>
             </div>
             <div class="box">
-                <img src="img/pic3.png" alt="">
-                <h4>good quality</h4>
-                <p>not only fast for us quality is also number one</p>
+                <img src="img/pic3.png" alt="Quality food icon" loading="lazy">
+                <h4>Premium Quality</h4>
+                <p>Fresh ingredients sourced daily from local farms and trusted suppliers</p>
+                <a href="#about" class="btn btn1" style="margin-top: 20px;">Our Standards</a>
             </div>
         </div>
-     </section>
-     <!-- _________about -->
-      <section class="sec about" id="about">
+    </section>
 
+    <section class="sec about" id="about">
         <div class="head about_heading">
-            <h3 class="heading_1">About us</h3>
-            <h1 class="heading">what <span>our customer</span> <br>say about us</h1>
-            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corrupti molestiae, aperiam quo possimus dolorum eius ex dicta quam magnam expedita, facere ullam aut a eum voluptas eaque! Placeat, ab.</p>
+            <h3 class="heading_1">Our Story</h3>
+            <h1 class="heading">The Passion Behind <br> <span>Our Quality</span></h1>
+            <p class="para">Founded in 2018, Food In has revolutionized fast food by combining speed with gourmet
+                quality. Our chefs craft each meal with passion, using only the freshest ingredients. We believe
+                everyone deserves restaurant-quality food delivered quickly to their doorstep.</p>
         </div>
 
-        <div class="about_box">
+    </section>
 
-            <div class="box1">
-                <img src="img/pic4.jpg" alt="">
-                <div class="box1_text">
-                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn btn1">explore more</button>
-                </div>
-            </div>
-            <div class="box1">
-                <img src="img/pic5.jpg" alt="">
-                <div class="box1_text">
-                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn btn1">explore more</button>
-                </div>
-            </div>
-            <div class="box1">
-                <img src="img/pic6.jpg" alt="">
-                <div class="box1_text">
-                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn btn1">explore more</button>
-                </div>
-            </div>
-            <div class="box1">
-                <img src="img/pic7.jpg" alt="">
-                <div class="box1_text">
-                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn btn1">explore more</button>
-                </div>
-            </div>
-            
-        </div>
-      </section>
-      <!-- _________contact -->
-       <section class="sec contact" id="contact">
+    <section class="sec contact" id="contact">
         <div class="contact_box">
             <div class="left_box">
-                <h2 class="heading_1">Download app</h2>
-                <h1 class="heading">Get started with food in today!</h1>
-                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt esse delectus magnam et minus consectetur ullam consequuntur placeat, minima architecto aliquam error nisi aliquid sequi tempore consequatur nemo optio?</p>
-                <button class="btn btn1">Get the app</button>
+                <h2 class="heading_1">Download Our App</h2>
+                <h1 class="heading">Get Food In <br>On Your Phone!</h1>
+                <p class="para1">Order ahead, track your delivery in real-time, earn rewards, and get exclusive app-only
+                    deals. Join over 100,000 satisfied customers who choose convenience without compromising on quality.
+                </p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px;">
+                    <a href="https://play.google.com/store" target="_blank" class="btn btn1">
+                        <i class="ri-google-play-fill" style="margin-right: 8px;"></i>Google Play
+                    </a>
+                    <a href="https://www.apple.com/app-store/" target="_blank" class="btn btn1">
+                        <i class="ri-apple-fill" style="margin-right: 8px;"></i>App Store
+                    </a>
+                </div>
             </div>
             <div class="right_box">
-                <img src="img/right.png" alt="">
+                <img src="img/right.png" alt="Food In mobile app interface" loading="lazy">
             </div>
         </div>
-       </section>
-       <!-- _________footer -->
-        <footer>
-            <div class="sec footer_container">
+    </section>
 
-                <div class="footer_col">
-                    <div class="footer_logo logo">
-                        <img src="img/log.png" alt="">
-                        <span>food in</span>
-                    </div>
-                    <p class="footer_text">
-                        our job is to fill your tummy with delicious food and with fast and free delivery time.
-                    </p>
-                    <ul class="footer_socials">
-                        <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
-                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
-                        <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
-                    </ul>
+    <footer>
+        <div class="sec footer_container">
+            <div class="footer_col">
+                <div class="footer_logo logo">
+                    <img src="img/log.png" alt="Food In Logo">
+                    <span>food in</span>
                 </div>
-                
-                <div class="footer_col">
-                    <h4>about</h4>
-                    <ul class="footer_links">
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">features</a></li>
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">menu</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>company</h4>
-                    <ul class="footer_links">
-                        <li><a href="#">my food in</a></li>
-                        <li><a href="#">partner</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">blog</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>support</h4>
-                    <ul class="footer_links">
-                        <li><a href="#">account</a></li>
-                        <li><a href="#">support center</a></li>
-                        <li><a href="#">feedback</a></li>
-                        <li><a href="#">contact us</a></li>
-                        <li><a href="#">accessibility</a></li>
-                    </ul>
-                </div>
-
+                <p class="footer_text">
+                    Delivering happiness one meal at a time. Fresh ingredients, fast delivery, and flavors that bring
+                    people together.
+                </p>
+                <ul class="footer_socials">
+                    <li><a href="https://instagram.com/foodin" target="_blank" aria-label="Follow us on Instagram"><i
+                                class="ri-instagram-fill"></i></a></li>
+                    <li><a href="https://facebook.com/foodin" target="_blank" aria-label="Like us on Facebook"><i
+                                class="ri-facebook-fill"></i></a></li>
+                    <li><a href="https://twitter.com/foodin" target="_blank" aria-label="Follow us on Twitter"><i
+                                class="ri-twitter-fill"></i></a></li>
+                    <li><a href="https://tiktok.com/@foodin" target="_blank" aria-label="Follow us on TikTok"><i
+                                class="ri-tiktok-fill"></i></a></li>
+                </ul>
             </div>
-            <div class="footer_bar">
-                copyright @ 2024 Anna Coding Corner. All right reserved.
+
+            <div class="footer_col">
+                <h4>Discover Food In</h4>
+                <ul class="footer_links">
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#services">How It Works</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Restaurant Locations</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
             </div>
-        </footer>
-        <span class="top" id="to-top"><i class="ri-arrow-up-circle-line"></i></span>
+
+            <div class="footer_col">
+                <h4>Our Menu</h4>
+                <ul class="footer_links">
+                    <li><a href="burgers.html">Signature Burgers</a></li>
+                    <li><a href="pizzas.html">Fresh Pizzas</a></li>
+                    <li><a href="salads.html">Healthy Salads</a></li>
+                    <li><a href="desserts.html">Sweet Treats</a></li>
+                    <li><a href="drinks.html">Beverages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Customer Support</h4>
+                <ul class="footer_links">
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="delivery.html">Delivery Areas</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                <div style="margin-top: 25px;">
+                    <p style="color: #aaa; margin-bottom: 10px;">Customer Service</p>
+                    <p style="color: #fff; font-weight: 600;">+254 700 000 000</p>
+                    <p style="color: #aaa; font-size: 0.9em;">Daily 8AM - 11PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            © 2024 Food In Restaurant. All rights reserved. | Fresh Food, Fast Delivery, Happy Customers.
+        </div>
+    </footer>
+
+    <a href="#home" class="top" id="to-top" aria-label="Scroll to top">
+        <i class="ri-arrow-up-circle-line"></i>
+    </a>
+
     <script src="index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu - Food In</title>
+    <meta name="description" content="Explore our full menu of delicious burgers, pizzas, salads, and more at Food In.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .menu_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .category_card {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 350px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .category_card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .category_card:hover img {
+            transform: scale(1.1);
+        }
+
+        .category_overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            color: #fff;
+        }
+
+        .category_overlay h2 {
+            font-family: "Playwrite CU", cursive;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category_overlay p {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sub-header"
+        style="min-height: 50vh; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg.jpg) center/cover;">
+        <nav class="navbar scrolled">
+            <div class="logo">
+                <img src="img/log.png" alt="Food In Logo">
+                <span>food in</span>
+            </div>
+
+            <ul class="nav_items" id="nav_links">
+                <div class="item">
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </div>
+            </ul>
+
+            <div class="nav_menu" id="menu_btn" aria-label="Toggle menu">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+
+        <section class="main">
+            <h1 class="heading">Our <span>Culinary</span> Menu</h1>
+            <p class="para">From our kitchen to your heart. Explore our diverse selections.</p>
+        </section>
+    </header>
+
+    <section class="sec">
+        <div class="head">
+            <h3 class="heading_1">Choose Your Craving</h3>
+            <h1 class="heading">Explore <span>Categories</span></h1>
+        </div>
+
+        <div class="menu_grid">
+            <a href="burgers.html" class="category_card">
+                <img src="img/burger_classic.jpg" alt="Burgers">
+                <div class="category_overlay">
+                    <h2>Burgers</h2>
+                    <p>Juicy, flame-grilled perfection.</p>
+                    <span class="btn">View Selection</span>
+                </div>
+            </a>
+            <a href="pizzas.html" class="category_card">
+                <img src="img/pizza_margherita.jpg" alt="Pizzas">
+                <div class="category_overlay">
+                    <h2>Pizzas</h2>
+                    <p>Stone-baked with fresh artisan toppings.</p>
+                    <span class="btn">View Selection</span>
+                </div>
+            </a>
+            <a href="salads.html" class="category_card">
+                <img src="img/salad_caesar.jpg" alt="Salads">
+                <div class="category_overlay">
+                    <h2>Salads</h2>
+                    <p>Fresh, vibrant, and packed with nutrients.</p>
+                    <span class="btn">View Selection</span>
+                </div>
+            </a>
+            <a href="desserts.html" class="category_card">
+                <img src="img/dessert_lava.jpg" alt="Desserts">
+                <div class="category_overlay">
+                    <h2>Desserts</h2>
+                    <p>The sweet finish you deserve.</p>
+                    <span class="btn">View Selection</span>
+                </div>
+            </a>
+            <a href="drinks.html" class="category_card">
+                <img src="img/drink_lemonade.jpg" alt="Drinks">
+                <div class="category_overlay">
+                    <h2>Drinks</h2>
+                    <p>Refreshing beverages for any mood.</p>
+                    <span class="btn">View Selection</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="sec footer_container">
+            <div class="footer_col">
+                <div class="footer_logo logo">
+                    <img src="img/log.png" alt="Food In Logo">
+                    <span>food in</span>
+                </div>
+                <p class="footer_text">
+                    Delivering happiness one meal at a time. Fresh ingredients, fast delivery, and flavors that bring
+                    people together.
+                </p>
+                <ul class="footer_socials">
+                    <li><a href="https://instagram.com/foodin" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    </li>
+                    <li><a href="https://facebook.com/foodin" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="https://twitter.com/foodin" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                    <li><a href="https://tiktok.com/@foodin" target="_blank"><i class="ri-tiktok-fill"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Our Menu</h4>
+                <ul class="footer_links">
+                    <li><a href="burgers.html">Signature Burgers</a></li>
+                    <li><a href="pizzas.html">Fresh Pizzas</a></li>
+                    <li><a href="salads.html">Healthy Salads</a></li>
+                    <li><a href="desserts.html">Sweet Treats</a></li>
+                    <li><a href="drinks.html">Beverages</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Customer Support</h4>
+                <ul class="footer_links">
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="delivery.html">Delivery Areas</a></li>
+                </ul>
+                <div style="margin-top: 25px;">
+                    <p style="color: #aaa; margin-bottom: 10px;">Order via WhatsApp</p>
+                    <p style="color: #fff; font-weight: 600;">+254 700 000 000</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            © 2024 Food In Restaurant. All rights reserved.
+        </div>
+    </footer>
+
+    <a href="#home" class="top" id="to-top">
+        <i class="ri-arrow-up-circle-line"></i>
+    </a>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
