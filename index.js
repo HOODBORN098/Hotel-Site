@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             // Close mobile menu if open
             if (navLinks.classList.contains('open')) {
                 navLinks.classList.remove('open');
-                menuIcon.setAttribute('class', 'ri-menu-line');
+                menuBtnIcon.setAttribute('class', 'ri-menu-line');
             }
         }
     });
