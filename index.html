@@ -9,6 +9,43 @@
         content="Food In offers delicious fast food with quick delivery. Enjoy our signature burgers, pizzas, and meals made with fresh ingredients.">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        /* Contact Form Styles locally included if not in style.css */
+        .contact_form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form_group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form_group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .form_group input,
+        .form_group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #333;
+            color: #fff;
+            font-family: inherit;
+        }
+
+        .form_group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,13 +59,14 @@
             <ul class="nav_items" id="nav_links">
                 <div class="item">
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="index.html#about">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#locations">LOCATIONS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </div>
 
                 <div>
-                    <a href="menu.html" class="btn">Explore Menu</a>
+                    <a href="#menu" class="btn">Order Now</a>
                 </div>
             </ul>
 
@@ -41,8 +79,8 @@
             <h2 class="heading_1">Welcome to Food In Restaurant</h2>
             <h1 class="heading">Savor Our <br>Delicious Creations</h1>
             <div class="main_btn">
-                <a href="menu.html" class="btn btn1">Order Now</a>
-                <a href="index.html#about" class="btn btn2"><i class="ri-play-circle-line"></i>Our Story</a>
+                <a href="#menu" class="btn btn1">Order Now</a>
+                <a href="#about" class="btn btn2"><i class="ri-play-circle-line"></i>Our Story</a>
             </div>
         </section>
     </header>
@@ -58,7 +96,7 @@
                 <img src="img/pic1.png" alt="Easy ordering icon" loading="lazy">
                 <h4>Simple Ordering</h4>
                 <p>Order your favorite meals in just three clicks with our user-friendly app</p>
-                <a href="menu.html" class="btn btn1" style="margin-top: 20px;">Start Ordering</a>
+                <a href="#menu" class="btn btn1" style="margin-top: 20px;">Start Ordering</a>
             </div>
             <div class="box">
                 <img src="img/pic2.png" alt="Fast delivery icon" loading="lazy">
@@ -75,6 +113,304 @@
         </div>
     </section>
 
+    <!-- MENU SECTION START -->
+    <div id="menu">
+        <!-- Burgers -->
+        <section class="sec menu-items" id="burgers">
+            <div class="head">
+                <h3 class="heading_1">Signature Burgers</h3>
+                <h1 class="heading">Savor the <span>Flavor</span></h1>
+            </div>
+
+            <div class="boxes">
+                <div class="box"
+                    data-description="The ultimate classic experience. Locally sourced beef, aged for 21 days, topped with melted cheddar, crisp iceberg lettuce, and sun-ripened tomatoes."
+                    data-ingredients="Prime Beef, Aged Cheddar, Brioche Bun, Secret Sauce, Pickles">
+                    <img src="img/burger_classic.jpg" alt="Classic Cheeseburger">
+                    <h4>Classic Cheeseburger</h4>
+                    <p>100% prime beef, aged cheddar, lettuce, tomato, and our secret sauce.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Classic Cheeseburger" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,200</a>
+                </div>
+                <div class="box"
+                    data-description="A meat lover's dream. Two beef patties layered with crispy mahogany-smoked bacon and sweet caramelized onions."
+                    data-ingredients="Double Beef, Smoked Bacon, BBQ Sauce, Caramelized Onions, Sesame Bun">
+                    <img src="img/burger_bacon.jpg" alt="Bacon Deluxe">
+                    <h4>Bacon Deluxe</h4>
+                    <p>Double beef patty, crispy bacon, caramelized onions, and BBQ sauce.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Bacon Deluxe" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,500</a>
+                </div>
+                <div class="box"
+                    data-description="For those who like it hot. Our signature beef patty with a spicy kick from charred jalapenos and zesty habanero mayo."
+                    data-ingredients="Beef Patty, Pepper Jack, Jalapenos, Spicy Mayo, Red Onion">
+                    <img src="img/burger_spicy.jpg" alt="Spicy Jalapeno">
+                    <h4>Spicy Jalapeno</h4>
+                    <p>Beef patty, pepper jack cheese, fresh jalapenos, and spicy mayo.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Spicy Jalapeno Burger" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,300</a>
+                </div>
+                <div class="box"
+                    data-description="Earthy and savory. Sauteed cremini mushrooms meet melted swiss cheese and a rich roasted garlic aioli."
+                    data-ingredients="Beef Patty, Swiss Cheese, Cremini Mushrooms, Garlic Aioli, Brioche">
+                    <img src="img/burger_mushroom.jpg" alt="Mushroom Swiss">
+                    <h4>Mushroom Swiss</h4>
+                    <p>Beef patty, sauteed mushrooms, swiss cheese, and garlic aioli.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Mushroom Swiss Burger" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,400</a>
+                </div>
+                <div class="box"
+                    data-description="Hearty and healthy. A house-made plant-based patty packed with vegetables, grains, and spices."
+                    data-ingredients="Veggie Patty, Avocado, Sprouts, Vegan Mayo, Whole Wheat Bun">
+                    <img src="img/burger_veggie.jpg" alt="Veggie Delight">
+                    <h4>Veggie Delight</h4>
+                    <p>Plant-based patty, fresh avocado, sprouts, and vegan herb mayo.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Veggie Delight Burger" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,000</a>
+                </div>
+                <div class="box"
+                    data-description="The hungry man's choice. Three massive beef patties, extra cheese, and a fried egg on top."
+                    data-ingredients="Triple Beef, Fried Egg, Triple Cheddar, Red Onion, Brioche Bun">
+                    <img src="img/burger_stack.jpg" alt="Double Stack">
+                    <h4>Double Stack</h4>
+                    <p>Triple beef patties, fried egg, extra cheddar, and special pub sauce.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Double Stack Burger" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,800</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pizzas -->
+        <section class="sec menu-items" id="pizzas">
+            <div class="head">
+                <h3 class="heading_1">Professional Pizzas</h3>
+                <h1 class="heading">Stone-Baked <span>Goodness</span></h1>
+            </div>
+
+            <div class="boxes">
+                <div class="box"
+                    data-description="The Italian masterpiece. Freshly made dough topped with san marzano tomato sauce, buffalo mozzarella, and aromatic basil leaves."
+                    data-ingredients="Dough, Mozzarella, Basil, Tomato Sauce, Olive Oil">
+                    <img src="img/pizza_margherita.jpg" alt="Margherita Pizza">
+                    <h4>Margherita Pizza</h4>
+                    <p>Fresh mozzarella, tomato sauce, basil, and a drizzle of olive oil.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Margherita Pizza" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,200</a>
+                </div>
+                <div class="box"
+                    data-description="A crowd favorite. Classic crust topped with premium spicy pepperoni and an extra layer of melting mozzarella."
+                    data-ingredients="Dough, Pepperoni, Extra Mozzarella, Oregano, Tomato Sauce">
+                    <img src="img/pizza_pepperoni.jpg" alt="Pepperoni Pizza">
+                    <h4>Pepperoni Pizza</h4>
+                    <p>Classic pepperoni with double mozzarella and artisan crust.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Pepperoni Pizza" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,400</a>
+                </div>
+                <div class="box"
+                    data-description="A garden on a slice. Loaded with fresh bell peppers, onions, mushrooms, olives, and sweet corn on a thin crust."
+                    data-ingredients="Dough, Mixed Peppers, Mushrooms, Olives, Corn, Onions">
+                    <img src="img/pizza_veggie.jpg" alt="Veggie Supreme">
+                    <h4>Veggie Supreme</h4>
+                    <p>Bell peppers, onions, mushrooms, olives, and sweet corn.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Veggie Supreme Pizza" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,300</a>
+                </div>
+                <div class="box"
+                    data-description="Bold and smokey. Zesty BBQ sauce base with tender grilled chicken, red onions, and a sprinkle of cilantro."
+                    data-ingredients="Dough, BBQ Sauce, Grilled Chicken, Red Onions, Cilantro">
+                    <img src="img/pizza_bbq.jpg" alt="BBQ Chicken">
+                    <h4>BBQ Chicken</h4>
+                    <p>Grilled chicken, red onions, BBQ sauce, and cilantro.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the BBQ Chicken Pizza" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,500</a>
+                </div>
+                <div class="box"
+                    data-description="The controversial classic. Sweet golden pineapple chunks and savory ham on a bed of melting cheese."
+                    data-ingredients="Dough, Pineapple, Ham, Mozzarella, Tomato Sauce">
+                    <img src="img/pizza_hawaiian.jpg" alt="Hawaiian Pizza">
+                    <h4>Hawaiian Pizza</h4>
+                    <p>Classic combination of pineapple, ham, and mozzarella.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Hawaiian Pizza" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,400</a>
+                </div>
+                <div class="box"
+                    data-description="A carnivore's feast. Loaded with ground beef, pepperoni, bacon, and ham for the ultimate meat experience."
+                    data-ingredients="Dough, Ground Beef, Pepperoni, Bacon, Ham, Extra Cheese">
+                    <img src="img/pizza_meat.jpg" alt="Meat Lovers">
+                    <h4>Meat Lovers</h4>
+                    <p>Packed with beef, pepperoni, bacon, ham, and extra cheese.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Meat Lovers Pizza" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,700</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salads -->
+        <section class="sec menu-items" id="salads">
+            <div class="head">
+                <h3 class="heading_1">Garden Fresh Salads</h3>
+                <h1 class="heading">Vibrant <span>Nutrients</span></h1>
+            </div>
+
+            <div class="boxes">
+                <div class="box"
+                    data-description="A refreshing garden blend. Crisp leafy greens, juicy cherry tomatoes, and crunchy cucumbers tossed in a light herb vinaigrette."
+                    data-ingredients="Mixed Greens, Tomatoes, Cucumbers, Croutons, Herb Vinaigrette">
+                    <img src="img/salad_caesar.jpg" alt="Caesar Salad">
+                    <h4>Caesar Salad</h4>
+                    <p>Romaine lettuce, croutons, parmesan cheese, and our creamy caesar dressing.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Caesar Salad" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,000</a>
+                </div>
+                <div class="box"
+                    data-description="Simple and nutritious. A vibrant mix of seasonal garden vegetables served with your choice of dressing."
+                    data-ingredients="Lettuce, Carrots, Radish, Cherry Tomatoes, Balsamic">
+                    <img src="img/salad_garden.jpg" alt="Garden Salad">
+                    <h4>Garden Salad</h4>
+                    <p>Fresh season greens, carrots, and tomatoes with balsamic glaze.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Garden Salad" target="_blank"
+                        class="btn btn1">Order Now - KSh 800</a>
+                </div>
+                <div class="box"
+                    data-description="A sweet and healthy treat. A colorful assortment of sliced seasonal fruits, perfect for a light snack or dessert."
+                    data-ingredients="Watermelon, Grapes, Pineapple, Berries, Mint">
+                    <img src="img/salad_fruit.jpg" alt="Fruit Platter">
+                    <h4>Fruit Platter</h4>
+                    <p>Seasonal fruit assortment with a hint of fresh mint.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Fruit Platter" target="_blank"
+                        class="btn btn1">Order Now - KSh 700</a>
+                </div>
+                <div class="box">
+                    <img src="img/salad_quinoa.jpg" alt="Quinoa Power">
+                    <h4>Quinoa Power Bowl</h4>
+                    <p>Organic quinoa, roasted vegetables, avocado, and lemon-tahini dressing.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Quinoa Power Bowl" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,100</a>
+                </div>
+                <div class="box">
+                    <img src="img/salad_chicken.jpg" alt="Chicken Avocado">
+                    <h4>Chicken Avocado</h4>
+                    <p>Grilled chicken, fresh avocado, mixed greens, and honey mustard dressing.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Chicken Avocado Salad" target="_blank"
+                        class="btn btn1">Order Now - KSh 1,200</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts -->
+        <section class="sec menu-items" id="desserts">
+            <div class="head">
+                <h3 class="heading_1">Indulgent Desserts</h3>
+                <h1 class="heading">Sweets for <span>Everyone</span></h1>
+            </div>
+
+            <div class="boxes">
+                <div class="box"
+                    data-description="Pure chocolate indulgence. A warm, gooey center surrounded by a moist sponge, served with a scoop of vanilla bean ice cream."
+                    data-ingredients="Dark Chocolate, Butter, Egg, Vanilla Ice Cream, Flour">
+                    <img src="img/dessert_lava.jpg" alt="Chocolate Lava Cake">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Chocolate Lava Cake" target="_blank"
+                        class="btn btn1">Order Now - KSh 800</a>
+                </div>
+                <div class="box"
+                    data-description="The elegant pick-me-up. Layers of espresso-soaked ladyfingers and creamy mascarpone, dusted with rich cocoa powder."
+                    data-ingredients="Mascarpone, Espresso, Ladyfingers, Cocoa Powder, Rum (Optional)">
+                    <img src="img/dessert_tiramisu.jpg" alt="Tiramisu">
+                    <h4>Tiramisu</h4>
+                    <p>Authentic Italian dessert with coffee-soaked layers and mascarpone.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Tiramisu" target="_blank"
+                        class="btn btn1">Order Now - KSh 900</a>
+                </div>
+                <div class="box"
+                    data-description="A chocolate lover's bliss. A dense, fudgy brownie loaded with chocolate chunks, topped with a drizzle of salted caramel."
+                    data-ingredients="Cocoa, Chocolate Chunks, Flour, Caramel Syrup, Pecans">
+                    <img src="img/dessert_brownie.jpg" alt="Choco Brownie">
+                    <h4>Choco Brownie</h4>
+                    <p>Naughty but nice brownie served with salted caramel drizzle.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Choco Brownie" target="_blank"
+                        class="btn btn1">Order Now - KSh 600</a>
+                </div>
+                <div class="box"
+                    data-description="A fun and colorful treat. Three scoops of artisanal ice cream topped with whipped cream, sprinkles, and a cherry."
+                    data-ingredients="Variety of Ice Cream, Whipped Cream, Sprinkles, Cherry, Wafer">
+                    <img src="img/dessert_sundae.jpg" alt="Ice Cream Sundae">
+                    <h4>Ice Cream Sundae</h4>
+                    <p>Your choice of flavors topped with whipped cream and sprinkles.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Ice Cream Sundae" target="_blank"
+                        class="btn btn1">Order Now - KSh 500</a>
+                </div>
+                <div class="box"
+                    data-description="A rustic and comforting classic. Sweet, slow-cooked apples topped with a crunchy cinnamon oat crumble and served with a side of warm custard."
+                    data-ingredients="Apples, Oats, Cinnamon, Brown Sugar, Custard Sauce">
+                    <img src="img/dessert_apple.jpg" alt="Warm Apple Crumble">
+                    <h4>Warm Apple Crumble</h4>
+                    <p>Slow-cooked apples with a cinnamon oat topping and custard sauce.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Warm Apple Crumble" target="_blank"
+                        class="btn btn1">Order Now - KSh 500</a>
+                </div>
+                <div class="box"
+                    data-description="Creamy and indulgent. A buttery graham cracker crust topped with smooth New York style cheesecake and fresh berry compote."
+                    data-ingredients="Cream Cheese, Graham Cracker, Sugar, Raspberries, Vanilla">
+                    <img src="img/dessert_cheesecake.jpg" alt="Classic Cheesecake">
+                    <h4>Classic Cheesecake</h4>
+                    <p>New York style cheesecake with a buttery crust and berry compote.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Classic Cheesecake" target="_blank"
+                        class="btn btn1">Order Now - KSh 800</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks -->
+        <section class="sec menu-items" id="drinks">
+            <div class="head">
+                <h3 class="heading_1">Thirst Quenchers</h3>
+                <h1 class="heading">Fresh <span>Beverages</span></h1>
+            </div>
+
+            <div class="boxes">
+                <div class="box"
+                    data-description="A refreshing citrus burst. Freshly squeezed lemons mixed with organic mint and a hint of wildflower honey."
+                    data-ingredients="Lemons, Mint, Honey, Water, Ice">
+                    <img src="img/drink_lemonade.jpg" alt="Ice Cold Lemonade">
+                    <h4>Ice Cold Lemonade</h4>
+                    <p>Homemade with fresh lemons, mint leaves, and a touch of honey.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Ice Cold Lemonade" target="_blank"
+                        class="btn btn1">Order Now - KSh 300</a>
+                </div>
+                <div class="box"
+                    data-description="The ultimate energy boost. A vibrant blend of seasonal berries, greek yogurt, and a touch of almond milk."
+                    data-ingredients="Mixed Berries, Greek Yogurt, Honey, Almond Milk, Chia Seeds">
+                    <img src="img/drink_smoothie.jpg" alt="Berry Blast Smoothie">
+                    <h4>Berry Blast Smoothie</h4>
+                    <p>A vibrant blend of fresh berries, Greek yogurt, and honey.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Berry Blast Smoothie" target="_blank"
+                        class="btn btn1">Order Now - KSh 500</a>
+                </div>
+                <div class="box"
+                    data-description="Tropical paradise in a glass. A vibrant mix of pineapple, orange, and lime juices with a splash of grenadine."
+                    data-ingredients="Pineapple Juice, Orange Juice, Lime, Grenadine, Ice">
+                    <img src="img/drink_punch.jpg" alt="Fruit Punch">
+                    <h4>Fruit Punch</h4>
+                    <p>A vibrant tropical mix of pineapple, orange, and lime juices.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order the Fruit Punch" target="_blank"
+                        class="btn btn1">Order Now - KSh 400</a>
+                </div>
+                <div class="box"
+                    data-description="The timeless classic. Your choice of a chilled carbonated beverage to complement your meal."
+                    data-ingredients="Cola/Lemon-Lime, Carbonated Water, Sugar, Ice">
+                    <img src="img/drink_soda.jpg" alt="Classic Soda">
+                    <h4>Classic Soda</h4>
+                    <p>Your choice of Coke, Sprite, or Fanta, served ice cold.</p>
+                    <a href="https://wa.me/254700000000?text=I'd like to order a Classic Soda" target="_blank"
+                        class="btn btn1">Order Now - KSh 200</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- MENU SECTION END -->
+
     <section class="sec about" id="about">
         <div class="head about_heading">
             <h3 class="heading_1">Our Story</h3>
@@ -83,10 +419,81 @@
                 quality. Our chefs craft each meal with passion, using only the freshest ingredients. We believe
                 everyone deserves restaurant-quality food delivered quickly to their doorstep.</p>
         </div>
-
     </section>
 
-    <section class="sec contact" id="contact">
+    <!-- LOCATIONS SECTION -->
+    <section class="sec locations" id="locations">
+        <div class="head">
+            <h3 class="heading_1">Visit Us</h3>
+            <h1 class="heading">Find Your <span>Spot</span></h1>
+        </div>
+
+        <div class="boxes">
+            <div class="box">
+                <h4>Egerton Main Branch</h4>
+                <p>Main Gate, Njoro Egerton<br>Nakuru, Kenya<br>Daily: 8AM - 11PM</p>
+                <a href="https://www.google.com/maps/search/Egerton+University+Main+Gate" target="_blank"
+                    class="btn btn1">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="sec contact-page" id="contact">
+        <div class="head">
+            <h3 class="heading_1">Get In Touch</h3>
+            <h1 class="heading">Send Us a <span>Message</span></h1>
+        </div>
+
+        <div class="boxes" style="margin-bottom: 3rem;">
+            <div class="box">
+                <i class="ri-map-pin-2-fill"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h4>Our Location</h4>
+                <p>Main Gate, Njoro Egerton<br>Nakuru, Kenya</p>
+            </div>
+            <div class="box">
+                <i class="ri-phone-fill"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h4>Phone Call</h4>
+                <p>+254 700 000 000<br>Daily: 8AM - 11PM</p>
+            </div>
+            <div class="box">
+                <i class="ri-mail-fill"
+                    style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h4>Email Support</h4>
+                <p>support@foodin.co.ke<br>info@foodin.co.ke</p>
+            </div>
+        </div>
+
+        <form class="contact_form">
+            <div class="form_group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form_group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form_group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What is this about?" required>
+            </div>
+            <div class="form_group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn1" style="width: 100%;">Send Message</button>
+        </form>
+    </section>
+
+    <!-- APP SECTION DELETED FOR CLEANER LOOK IF DESIRED, OR KEPT.
+         Original had "Download Our App". I'll keep it before footer as in original but maybe simplified?
+         Original location was before Contact. I'll put it back before Footer if needed, but user
+         focused on "seeing pages when scrolling".
+         I will include the App section before footer to be faithful to original content.
+    -->
+    <section class="sec contact">
         <div class="contact_box">
             <div class="left_box">
                 <h2 class="heading_1">Download Our App</h2>
@@ -137,29 +544,25 @@
                 <ul class="footer_links">
                     <li><a href="#about">Our Story</a></li>
                     <li><a href="#services">How It Works</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="locations.html">Restaurant Locations</a></li>
-                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="#locations">Restaurant Locations</a></li>
                 </ul>
             </div>
 
             <div class="footer_col">
                 <h4>Our Menu</h4>
                 <ul class="footer_links">
-                    <li><a href="burgers.html">Signature Burgers</a></li>
-                    <li><a href="pizzas.html">Fresh Pizzas</a></li>
-                    <li><a href="salads.html">Healthy Salads</a></li>
-                    <li><a href="desserts.html">Sweet Treats</a></li>
-                    <li><a href="drinks.html">Beverages</a></li>
+                    <li><a href="#burgers">Signature Burgers</a></li>
+                    <li><a href="#pizzas">Fresh Pizzas</a></li>
+                    <li><a href="#salads">Healthy Salads</a></li>
+                    <li><a href="#desserts">Sweet Treats</a></li>
+                    <li><a href="#drinks">Beverages</a></li>
                 </ul>
             </div>
 
             <div class="footer_col">
                 <h4>Customer Support</h4>
                 <ul class="footer_links">
-                    <li><a href="help.html">Help Center</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="delivery.html">Delivery Areas</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                     <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
@@ -178,6 +581,28 @@
     <a href="#home" class="top" id="to-top" aria-label="Scroll to top">
         <i class="ri-arrow-up-circle-line"></i>
     </a>
+
+    <!-- Product Modal (Copied from one of the pages) -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <div class="modal-left">
+                <img src="" alt="" id="modalImg">
+            </div>
+            <div class="modal-right">
+                <h2 id="modalTitle">Product Title</h2>
+                <div class="modal-price" id="modalPrice">KSh 0</div>
+                <p class="modal-description" id="modalDesc">Product description goes here.</p>
+                <div class="modal-details">
+                    <h4>Ingredients</h4>
+                    <ul id="modalIngredients">
+                        <!-- Filled by JS -->
+                    </ul>
+                </div>
+                <a href="" target="_blank" class="btn btn1" id="modalOrderBtn">Order via WhatsApp</a>
+            </div>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
